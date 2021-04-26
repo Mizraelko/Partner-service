@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server from partner-service",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mizraelko/partner-service.git"
+  },
+  "author": "Mizrael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mizraelko/partner-service/issues"
+  },
+  "homepage": "https://github.com/Mizraelko/partner-service#readme"
+}
