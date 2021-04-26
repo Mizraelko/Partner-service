@@ -1,4 +1,4 @@
 {
   "serverPort": 5000,
-  "dbUrl": ""
+  "dbUrl": "mongodb+srv://partner:partner123@partner-service.v3mef.mongodb.net/partner?retryWrites=true&w=majority"
 }
