@@ -1,19 +1,19 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "server from partner-service",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mizraelko/partner-service.git"
+    "start": "node index.js"
   },
   "author": "Mizrael",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mizraelko/partner-service/issues"
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
   },
-  "homepage": "https://github.com/Mizraelko/partner-service#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
