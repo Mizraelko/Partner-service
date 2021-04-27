@@ -1,0 +1,18 @@
+{
+  "name": "partner",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "npm run start --prefix client/",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Mizrael",
+  "license": "ISC"
+}

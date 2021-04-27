@@ -4,18 +4,24 @@ const config = require('config');
 
 const app = express();
 
-const PORT = config.get('serverPort');
 
+const PORT = config.get('serverPort');
 
 const start = async () => {
     try {
-        await mongoose.connect(config.get('dbUrl'));
+        await mongoose.connect(dbUrl , {
+            useNewUrlParser:true,
+            useUnifiedTopology:true,
+            useCreateIndex:true,
+            useFindAndModify:true
+        });
 
         app.listen(PORT, ()=> {
-            console.log('server start 5000');
+                console.log('rer')
         })
-    }catch (e) {
 
+    }catch (e) {
+        console.log(e.message);
     }
 }
 start();
