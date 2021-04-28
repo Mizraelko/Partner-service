@@ -1,13 +1,11 @@
-const {Schema, model} = require('mongoose');
+const {Schema, model, ObjectId} = require('mongoose');
 
 const User = new Schema({
     email:{type:String, required:true, unique: true},
     password:{type:String, required:true},
-    diskSpace:{type:Number, default: 1024**3*10},
-    usedSpace:{type:Number, default:0},
     avatar: {type:String},
-    files: [{type:Objectid, ref:'file'}],
-    house:[{type:Objectid, ref:'House'}]
+    house:[{type:ObjectId, ref:'House'}],
+    todos:[{type:ObjectId, ref:'Todo'}]
 });
 
 module.exports = model('User', User);
