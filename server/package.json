@@ -6,7 +6,6 @@
   "author": "Mizrael",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.5"
   }

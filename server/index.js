@@ -1,11 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const config = require('config');
+
 
 const app = express();
 
 
-const PORT = config.get('serverPort');
+const PORT = 5000;
+const dbUrl = "mongodb+srv://partner:partner123@partner-service.v3mef.mongodb.net/partner?retryWrites=true&w=majority"
 
 const start = async () => {
     try {
